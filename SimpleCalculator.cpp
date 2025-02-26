@@ -1,5 +1,4 @@
 #include<iostream>
-#include<cstdlib>
 
 using namespace std;
 
@@ -28,15 +27,13 @@ int arithmetic (int num1, int num2, char op){
             exit(1);
         }
     }
-int main(int argc, char* argv[]){
+int main(){
 
     int num1, num2;
     char op;
 
-    num1 = atoi(argv[1]);
-    op = argv[2][0];
-    num2 = atoi(argv[3]);
-    arithmetic(num1, num2, op);
+    cin >> num1 >> op >> num2;
+    cout << arithmetic(num1, num2, op);
     return 0;
 
 }
