@@ -2,7 +2,13 @@
 
 using namespace std;
 
-int arithmetic (int num1, int num2, char op){
+int arithmetic (int num1, int num2, char op);
+
+int main(){
+
+    int num1, num2;
+    char op;
+        int arithmetic (int num1, int num2, char op){
         switch (op){
         case '+':
             return num1 + num2;
@@ -27,11 +33,6 @@ int arithmetic (int num1, int num2, char op){
             exit(1);
         }
     }
-int main(){
-
-    int num1, num2;
-    char op;
-
     cin >> num1 >> op >> num2;
     cout << arithmetic(num1, num2, op);
     return 0;
